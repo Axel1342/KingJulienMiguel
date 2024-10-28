@@ -1,0 +1,128 @@
+    a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+    a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+    a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+    a:active {
+    color: gold;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+    body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+    .container {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+    .left-section {
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('Cityscape.png') no-repeat ;
+    background-size: cover;
+    padding: 50px;
+    background-color: #e7f3ff;
+}
+
+    .logo {
+        height: 100px;
+        width: 90px;
+        margin-bottom: 20px;
+        align-self: flex-start;
+}
+
+    .left-nav {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+
+    .left-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.right-section {
+    flex: 1;
+    background-color: #464646;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .form-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 400px;
+}
+
+    .form-container h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+      font-weight: bold;
+}
+
+    .form-container form {
+      display: flex;
+      flex-direction: column;
+}
+
+    .form-container input {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+}
+
+    .form-container button {
+      padding: 10px;
+      background-color: orange;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+}
+
+    .form-container button:hover {
+      background-color: gold;
+}

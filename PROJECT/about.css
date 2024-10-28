@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+  }
+  
+  /* Left Section Styling */
+  .left-section {
+    width: 50%; /* Adjusted width */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('Cityscape.png') no-repeat center center;
+    background-size: cover;
+    padding: 50px;
+    color: #000;
+  }
+  
+  .logo {
+    height: 100px;
+    width: 90px;
+    margin-bottom: 20px;
+    align-self: flex-start; /* Align logo to the left */
+  }
+  
+  h1 {
+    font-size: 60px;
+    color: #000;
+    margin-top: 50px; /* Add some space between the logo and the text */
+    text-align: center;
+    align-self: center; /* Center the "ABOUT US" horizontally */
+    z-index: 1; /* Ensure the text appears above the cityscape */
+  }
+  
+  /* Right Section Styling */
+  .right-section {
+    width: 50%;
+    background-color: #3a3a3a;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column; /* Stack names and titles */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Darker text */
+  }
+  
+  .info p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Back Button Styling */
+  .back-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #333;
+  }
+  

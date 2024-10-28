@@ -1,0 +1,291 @@
+
+/* Main navbar with background and height */
+.navbar {
+    background-color: #35354A;
+    height: auto; /* Let height adjust based on content */
+    position: relative;
+    padding: 0;
+    z-index: 10; /* Ensures navbar stays on top */
+}
+
+/* Top section containing the logo, nav links, and buttons */
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative; /* Keeps it in the normal flow */
+    width: 100%;
+    z-index: 10;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    padding: 10px 15px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Align links to the right, except the logo */
+.navbar a.right {
+    margin-left: auto;
+}
+
+/* Adjust logo for better responsiveness */
+.logo img {
+    max-width: 100%;
+    height: auto;
+    width: 120px; /* Keep the width as it is */
+    margin: 0 auto; /* This will center the logo */
+}
+
+.nav-links {
+    margin-top: 30px;
+}
+
+.auth-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+body {
+    font-family: 'Afacad', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Buttons */
+.login-btn, .signup-btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: #b3cc58;
+    color: white;
+}
+
+.signup-btn {
+    background-color: #f1b84c;
+    color: white;
+    margin-right: 40px;
+}
+
+/* Hover effects */
+.login-btn:hover {
+    background-color: #a8c257; /* Slightly darker green on hover */
+}
+
+.signup-btn:hover {
+    background-color: #e6ac44; /* Slightly darker yellow on hover */
+}
+
+
+
+/* Extension content */
+.extension {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #35354A;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1; /* Keep the extension below the navbar */
+}
+
+/* Each box in the extension */
+.extension .box {
+    display: flex;              /* Use flexbox to arrange items horizontally */
+    background-color: #F4F4F9;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;           /* Left align the text */
+    margin-top: 10px;           /* Reduced margin-top by 15px */
+    flex: 1 1 300px;            /* Allows the boxes to grow and shrink, with a minimum width of 300px */
+    max-width: 30%;             /* Ensures boxes stay a reasonable size */
+    align-items: center;        /* Vertically center the content */
+}
+
+/* Style for the image inside the box */
+.extension .box img {
+    width: 100px;             
+    height: auto;
+    margin-right: 20px;        
+    flex-shrink: 0;            
+}
+
+/* Style for the text inside the box */
+.extension .box p {
+    font-size: 18px;
+    color: #333;
+    flex-grow: 1;              
+    text-align: justify;      
+    word-wrap: break-word;      
+    overflow-wrap: break-word; 
+    margin: 60;                 
+}
+
+/* Centers the question content */
+.question-content {
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; 
+}
+
+/* Style for headings */
+.question-content h3 {
+    text-align: center;
+}
+
+/* Centers the question content */
+.question-content {
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; 
+}
+
+/* Style for headings */
+.question-content h3 {
+    text-align: center;
+}
+
+/* Style for question labels and answers */
+.question-content form label {
+    display: flex;
+    align-items: center;
+    justify-content: left; /* Aligns the answer options to the left */
+    padding: 5px 0;
+    margin: 0 auto;
+    width: 100%;
+    text-align: left; /* Aligns text to the left */
+    max-width: 400px; /* Limits width to center the answers on the page */
+}
+
+/* Move answer options slightly to the right within the label */
+.question-content form label input {
+    margin-right: 10px; /* Adds space between checkbox/radio and text */
+}
+
+/* Center the submit button */
+.question-content button[type="button"] {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.question-content button[type="button"]:hover {
+    background-color: #45a049;
+}
+
+.question-content hr {
+    border:none;
+    height: 3px;
+    background: linear-gradient(to right, #4CAF50, #ffb916);
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    opacity: 50%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .question-content {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .question-content form label {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .question-content button[type="button"] {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .question-content {
+        padding: 10px;
+    }
+
+    .question-content form label {
+        font-size: 14px;
+    }
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .navbar-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 15px; /* Adds some spacing below the logo */
+    }
+
+    .extension .box {
+        width: 90%;              /* Allow boxes to fill 90% of the screen width */
+        margin-bottom: 20px;      /* Adds space between stacked boxes */
+        margin-top: 50px;         /* Adjusts top margin for better spacing */
+        padding: 20px;            /* Reduce padding for smaller screens */
+        flex-wrap: wrap;          /* Ensure content wraps properly in smaller screens */
+    }
+}
+
+    /* Center the auth buttons and nav links */
+    .auth-buttons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .login-btn, .signup-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+/* Additional Responsive Tweaks for Very Small Screens */
+@media screen and (max-width: 480px) {
+    .extension .box {
+        width: 100%;             /* Full width on very small screens */
+        margin-top: 20px;         /* Reduce top margin */
+        padding: 15px;            /* Further reduce padding for very small screens */
+        flex-wrap: wrap;          /* Ensure the box content wraps properly */
+    }
+}
+
+    .extension .box {
+        width: 90%;              /* Allow boxes to fill 90% of the screen width */
+        margin-bottom: 20px;      /* Adds space between stacked boxes */
+        margin-top: 50px;         /* Adjusts top margin for better spacing */
+    }
+
+/* Additional Responsive Tweaks for Very Small Screens */
+@media screen and (max-width: 480px) {
+    .extension .box {
+        width: 100%;             /* Full width on very small screens */
+        margin-top: 20px;         /* Reduce top margin */
+    }
+}

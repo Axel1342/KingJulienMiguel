@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="taketest.css">
+    <link href='https://fonts.googleapis.com/css?family=Afacad' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-top">
+          <div class="logo">
+            <img src="Logo.png" alt="Logo">
+          </div>
+          <div class="nav-links">
+            <a href="index.html">ITCS TEST</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="forums.html">FORUMS</a>
+          </div>
+          <div class="auth-buttons">
+            <a href="login.html" class="login-btn">Log in</a>
+            <a href="register.html" class="signup-btn">Sign Up</a>
+          </div>
+        </div>
+        <!-- Extension Content -->
+        <div class="extension">
+          <div class="box">
+            <img src="1.png" alt="Be honest for accurate results">
+            <p>Be as honest as possible for accurate results!</p>
+          </div>
+          <div class="box">
+            <img src="2.png" alt="Find out your computer specialization">
+            <p>Find out your computer specialization and grow further into a successful career!</p>
+          </div>
+        </div>
+      </div>
+
+  <!-------------------------------------------------------here ang questions-------------------------------------------------------------------->
+  <div class="question-content">
+    <h1>Find Your Computer Specialization</h1>
+    <form id="surveyForm">
+        <!-- Personality Section -->
+        <h2>Personality</h2>
+        <h3>1. Which describes your approach to problem-solving?</h3>
+        <label><input type="radio" name="q1" value="ai,theory"> I enjoy tackling complex, abstract problems with logic.</label><br>
+        <label><input type="radio" name="q1" value="ux"> I focus on understanding and solving user interaction issues.</label><br>
+        <label><input type="radio" name="q1" value="security,networks"> I enjoy finding weaknesses in systems and optimizing them.</label><br>
+        <label><input type="radio" name="q1" value="game_design,graphics"> I love creating visually appealing and interactive designs.</label><br>
+
+        <hr>
+
+        <h3>2. How do you prefer to work with others?</h3>
+        <label><input type="radio" name="q2" value="ux,systems"> I enjoy collaborating to solve complex user or system issues.</label><br>
+        <label><input type="radio" name="q2" value="ai,theory"> I prefer independent research and problem-solving.</label><br>
+        <label><input type="radio" name="q2" value="security,networks"> I like working in a team to optimize and secure systems.</label><br>
+        <label><input type="radio" name="q2" value="game_design,graphics"> I enjoy collaborating on creative projects with visual output.</label><br>
+
+        <hr>
+
+        <h3>3. What excites you most about technology?</h3>
+        <label><input type="radio" name="q3" value="ai,ds"> The potential of AI and data science to revolutionize industries.</label><br>
+        <label><input type="radio" name="q3" value="ux"> Improving the relationship between humans and machines.</label><br>
+        <label><input type="radio" name="q3" value="networks,security"> The need to protect and optimize technology systems.</label><br>
+        <label><input type="radio" name="q3" value="game_design,graphics"> Creating fun, interactive experiences with technology.</label><br>
+
+        <hr>
+
+        <h3>4. How do you handle challenges?</h3>
+        <label><input type="radio" name="q4" value="ai,theory"> I like tackling challenges that require deep problem-solving.</label><br>
+        <label><input type="radio" name="q4" value="ux"> I prefer solving user experience or design challenges.</label><br>
+        <label><input type="radio" name="q4" value="security,networks"> I enjoy identifying and fixing security vulnerabilities.</label><br>
+        <label><input type="radio" name="q4" value="graphics,game_design"> I like creatively designing solutions to make things more engaging.</label><br>
+
+        <hr>
+
+        <h3>5. What kind of problems do you enjoy solving?</h3>
+        <label><input type="radio" name="q5" value="ai,theory"> Complex, algorithmic, or theoretical problems.</label><br>
+        <label><input type="radio" name="q5" value="ux"> Problems related to human interaction with technology.</label><br>
+        <label><input type="radio" name="q5" value="security,networks"> Problems related to security and system performance.</label><br>
+        <label><input type="radio" name="q5" value="game_design,graphics"> Creative or visual design problems.</label><br>
+
+
+        <!-- Skills Section -->
+        <h2>Skills</h2>
+
+        <h3>6. Which of these skills are you strongest in?</h3>
+        <label><input type="radio" name="q6" value="ai,software"> Designing efficient algorithms and solving technical problems.</label><br>
+        <label><input type="radio" name="q6" value="ux,graphics"> Designing user-friendly and visually appealing interfaces.</label><br>
+        <label><input type="radio" name="q6" value="security,networks"> Troubleshooting and securing systems or networks.</label><br>
+        <label><input type="radio" name="q6" value="ds,programming"> Analyzing data and writing efficient programs.</label><br>
+
+        <hr>
+      
+        <h3>7. What programming languages do you excel at?</h3>
+        <label><input type="radio" name="q7" value="ai,ds"> Python, R, or MATLAB for AI or data science projects.</label><br>
+        <label><input type="radio" name="q7" value="programming,ux"> JavaScript, HTML/CSS for web and app development.</label><br>
+        <label><input type="radio" name="q7" value="game_design"> C++, Unity, or Unreal Engine for game development.</label><br>
+        <label><input type="radio" name="q7" value="systems,security"> SQL, NoSQL, or network troubleshooting tools.</label><br>
+
+        <hr>
+
+        <h3>8. Which type of project are you most confident in?</h3>
+        <label><input type="radio" name="q8" value="ai,theory"> Projects that involve complex problem-solving or AI development.</label><br>
+        <label><input type="radio" name="q8" value="ux,graphics"> Projects that focus on user experience or visual design.</label><br>
+        <label><input type="radio" name="q8" value="security,networks"> Securing and optimizing large systems or networks.</label><br>
+        <label><input type="radio" name="q8" value="ds,software"> Data science or software development projects.</label><br>
+
+        <hr>
+
+        <h3>9. How would you rate your ability to analyze data?</h3>
+        <label><input type="radio" name="q9" value="ds,ai"> Excellent – I can extract meaningful insights from data.</label><br>
+        <label><input type="radio" name="q9" value="programming,security"> Good – I can write efficient code to handle data processing.</label><br>
+        <label><input type="radio" name="q9" value="ux,graphics"> Fair – I can work with data to improve user experiences.</label><br>
+        <label><input type="radio" name="q9" value="systems,networks"> Basic – I mainly focus on systems optimization rather than data.</label><br>
+
+        <hr>
+
+        <h3>10. How proficient are you in debugging or troubleshooting systems?</h3>
+        <label><input type="radio" name="q10" value="software,security"> Very proficient – I often debug software and security issues.</label><br>
+        <label><input type="radio" name="q10" value="ds,ai"> I am good at debugging algorithms and data processes.</label><br>
+        <label><input type="radio" name="q10" value="ux,graphics"> I focus on improving the design more than debugging technical systems.</label><br>
+        <label><input type="radio" name="q10" value="game_design"> I debug my designs and ensure smooth interactions in my projects.</label><br>
+
+        <!-- Career Goals Section -->
+        <h2>Career Goals</h2>
+
+        <h3>11. What type of projects do you see yourself working on in the future?</h3>
+        <label><input type="radio" name="q11" value="ai,ds"> AI, data science, or research projects.</label><br>
+        <label><input type="radio" name="q11" value="game_design,graphics"> Creative projects, such as game design or visual media.</label><br>
+        <label><input type="radio" name="q11" value="networks,security"> Securing and optimizing large networks or security systems.</label><br>
+        <label><input type="radio" name="q11" value="ux,software"> Building user-friendly and technically robust applications.</label><br>
+
+        <hr>
+
+        <h3>12. What industry would you like to work in?</h3>
+        <label><input type="radio" name="q12" value="ai,theory"> Academia, research, or AI-focused industries.</label><br>
+        <label><input type="radio" name="q12" value="game_design,graphics"> Entertainment, media, or design industries.</label><br>
+        <label><input type="radio" name="q12" value="networks,security"> IT, cybersecurity, or network management.</label><br>
+        <label><input type="radio" name="q12" value="ux,software"> Tech companies or user-centered design firms.</label><br>
+
+        <hr>
+
+        <h3>13. How important is work-life balance to you?</h3>
+        <label><input type="radio" name="q13" value="ai,theory"> I don’t mind working long hours if the project is stimulating.</label><br>
+        <label><input type="radio" name="q13" value="ux"> A good work-life balance is crucial to me.</label><br>
+        <label><input type="radio" name="q13" value="security,networks"> I’m open to intense work periods if the problem is significant.</label><br>
+        <label><input type="radio" name="q13" value="game_design"> I thrive when I can balance creative and technical work in my career.</label><br>
+
+        <hr>
+
+        <h3>14. What kind of work environment do you prefer?</h3>
+        <label><input type="radio" name="q14" value="ai,theory"> I prefer working independently or in small teams.</label><br>
+        <label><input type="radio" name="q14" value="ux,game_design"> I enjoy working in collaborative, creative environments.</label><br>
+        <label><input type="radio" name="q14" value="security,networks"> I work best in a structured, technically challenging environment.</label><br>
+        <label><input type="radio" name="q14" value="programming,software"> I like flexible environments where I can focus on solving technical problems.</label><br>
+
+        <hr>
+
+        <h3>15. How do you see yourself advancing in your career?</h3>
+        <label><input type="radio" name="q15" value="ai,theory"> Becoming an expert in AI or complex algorithm design.</label><br>
+        <label><input type="radio" name="q15" value="ux,game_design"> Leading creative teams in designing new user experiences or games.</label><br>
+        <label><input type="radio" name="q15" value="security,networks"> Becoming a cybersecurity or network expert in large organizations.</label><br>
+        <label><input type="radio" name="q15" value="programming,software"> Leading development teams in solving major technical problems.</label><br>
+
+        <button type="button" onclick="calculateResult()">Submit</button>
+    </form>
+
+    <h2 id="resultTitle" style="display:none">Your Specialization:</h2>
+    <p id="resultDescription"></p>
+</div>
+
+  <!-------------------------------------------------------end of questions-------------------------------------------------------------------->
+
+<div class="row">
+  <div class="side">
+    <h2>CONTACTS:</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQKrFhY-ljA-u7J5IMWeTv8zmpBx4PP9nQMw&s" width="150"><br>
+    <a href="https://www.facebook.com/jakeZdemonwold.nightshadow/">FACEBOOK</a>
+    <br>
+    <hr>
+    <br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/900px-Instagram_icon.png"; width="150">
+    <br>
+    <a href="https://www.instagram.com/jmanuelcarlos0510/";>INSTAGRAM</a>
+    <hr>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Having a Problem?</h2>
+  <p>You can send us a message via this link: stellarfocusphotography134@gmail.com</p>
+</div>
+
+
+<script src="questions.js"></script>
+</body>
+</html>
